@@ -39,3 +39,9 @@ secrets/
 tmp/
 temp/
 *.tmp
+
+# config files
+my.cnf
+my.cnf.hardened
+my.cnf.initial
+estado_inicial_nuevo.txt

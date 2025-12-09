@@ -1,0 +1,15 @@
+[mysqld]
+# Configuración INICIAL - Sin hardening
+# Este es el estado ANTES del hardening
+
+# Puerto por defecto (INSEGURO - puerto conocido)
+port=3306
+
+# Bind address - acepta conexiones de cualquier origen en Docker
+bind-address=0.0.0.0
+
+# SQL Mode - modo tradicional básico
+sql_mode=TRADITIONAL
+
+# Sin política de contraseñas estricta
+# validate-password deshabilitado
