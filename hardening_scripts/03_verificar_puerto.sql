@@ -39,14 +39,7 @@ SELECT
 
 -- Verificar procesos conectados
 SELECT '=== PROCESOS CONECTADOS ===' AS '';
-SELECT 
-    ID,
-    USER,
-    HOST,
-    DB,
-    COMMAND,
-    TIME,
-    STATE
+SELECT ID, USER, HOST, DB, COMMAND, TIME, STATE
 FROM information_schema.PROCESSLIST
 ORDER BY ID;
 

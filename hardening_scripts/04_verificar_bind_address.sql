@@ -40,15 +40,7 @@ SELECT
 
 -- Ver procesos conectados y desde dónde
 SELECT '=== CONEXIONES ACTIVAS ===' AS '';
-SELECT 
-    ID,
-    USER,
-    HOST,
-    DB,
-    COMMAND,
-    TIME,
-    STATE,
-    INFO
+SELECT ID, USER, HOST, DB, COMMAND, TIME, STATE, INFO
 FROM information_schema.PROCESSLIST
 WHERE USER != 'system user'
 ORDER BY ID;
