@@ -55,6 +55,7 @@ SELECT
         ELSE '✗ FALTA - RECOMENDADO'
     END AS 'ONLY_FULL_GROUP_BY';
 
+USE mysql; -- Seleccionar una base de datos para las pruebas de validación
 SELECT '\n=== PRUEBAS DE VALIDACIÓN ===' AS '';
 
 -- Test 1: Verificar que rechaza truncamiento de datos
