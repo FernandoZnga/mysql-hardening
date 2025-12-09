@@ -1,0 +1,35 @@
+mysql: [Warning] Using a password on the command line interface can be insecure.
+
+=== VERIFICACIÓN DE PUERTO ===
+Puerto configurado
+3308
+Variable_name	Value
+port	3308
+Variable_name	Value
+hostname	9013d7c4e2fb
+
+=== CONFIGURACIÓN DE RED ===
+Variable_name	Value
+admin_port	33062
+large_files_support	ON
+mysqlx_port	33060
+mysqlx_port_open_timeout	0
+port	3308
+report_host	
+report_password	
+report_port	3308
+report_user	
+require_secure_transport	OFF
+
+=== INFORMACIÓN DE CONEXIÓN ACTUAL ===
+Usuario actual	Usuario autenticado	Hostname	Puerto
+root@localhost	root@localhost	9013d7c4e2fb	3308
+
+=== PROCESOS CONECTADOS ===
+ID	USER	HOST	DB	COMMAND	TIME	STATE
+5	event_scheduler	localhost	NULL	Daemon	35	Waiting on empty queue
+8	root	localhost	NULL	Query	0	executing
+
+=== RESULTADO ===
+RESULTADO
+✅ ÉXITO: MySQL está configurado para escuchar en puerto 3308

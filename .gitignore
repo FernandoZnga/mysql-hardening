@@ -1,0 +1,41 @@
+# MySQL Data
+data/
+*.ibd
+*.frm
+
+# Docker
+.env
+docker-compose.override.yml
+
+# Logs
+*.log
+logs/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Backups
+*.backup
+*.bak
+*.sql.gz
+
+# Credentials (if any)
+credentials/
+secrets/
+*.pem
+*.key
+
+# Temporary files
+tmp/
+temp/
+*.tmp

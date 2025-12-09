@@ -1,0 +1,50 @@
+mysql: [Warning] Using a password on the command line interface can be insecure.
+
+=== 1. TODAS LAS BASES DE DATOS ===
+Database
+information_schema
+mysql
+performance_schema
+sys
+testdb
+
+=== 2. BUSCAR BASE "test" EXACTA ===
+
+=== 3. BUSCAR BASES CON PATRÓN "test_%" ===
+Database (test%)
+testdb
+
+=== 4. CONTAR BASES DE TIPO TEST ===
+Total bases test%
+1
+
+=== 5. CONTENIDO DE testdb (si existe) ===
+Total tablas en testdb
+0
+
+=== 6. PRIVILEGIOS SOBRE BASES TEST ===
+
+=== ELIMINANDO: Base de datos "test" ===
+
+=== ELIMINANDO: Base de datos "testdb" ===
+
+=== LIMPIANDO: Privilegios sobre bases test ===
+
+=== VERIFICACIÓN: Bases de datos después de limpieza ===
+Database
+information_schema
+mysql
+performance_schema
+sys
+
+=== VERIFICACIÓN: Buscar bases test restantes ===
+
+=== VERIFICACIÓN: Privilegios test restantes ===
+RESULTADO DE BASES DE DATOS
+✅ ÉXITO: No hay bases de datos tipo "test" en el sistema
+RESULTADO DE PRIVILEGIOS
+✅ ÉXITO: No hay privilegios sobre bases "test" en el sistema
+
+=== RESUMEN DE SEGURIDAD ===
+Control	Acción	Estándares	Fecha ejecución
+Bases de datos de prueba	Eliminadas	CIS 1.3, PCI-DSS 2.2	2025-12-09 02:30:52

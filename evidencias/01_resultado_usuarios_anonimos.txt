@@ -1,0 +1,9 @@
+mysql: [Warning] Using a password on the command line interface can be insecure.
+
+VERIFICACIÓN: Usuarios anónimos ANTES de eliminar
+
+Total de usuarios anónimos encontrados: 0
+
+VERIFICACIÓN: Usuarios anónimos DESPUÉS de eliminar
+RESULTADO
+✅ ÉXITO: No hay usuarios anónimos en el sistema

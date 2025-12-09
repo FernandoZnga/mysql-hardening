@@ -1,0 +1,28 @@
+mysql: [Warning] Using a password on the command line interface can be insecure.
+
+=== USUARIOS ROOT ACTUALES ===
+User	Host	plugin	password_expired	account_locked
+root	%	caching_sha2_password	N	N
+root	localhost	caching_sha2_password	N	N
+
+=== VERIFICAR USUARIO ADMIN ALTERNATIVO ===
+User	Host	plugin
+admin	%	caching_sha2_password
+Verificacion
+OK: Usuario admin existe como alternativa
+
+=== TODOS LOS USUARIOS ===
+User	Host
+admin	%
+root	%
+root	localhost
+
+=== ELIMINANDO root@% ===
+
+=== USUARIOS ROOT DESPUÉS DE ELIMINACIÓN ===
+User	Host
+root	localhost
+
+=== VERIFICACIÓN FINAL ===
+RESULTADO
+EXITO: Solo existe root@localhost

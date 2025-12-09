@@ -1,0 +1,37 @@
+mysql: [Warning] Using a password on the command line interface can be insecure.
+
+=== 1. USUARIOS ANÓNIMOS ===
+
+=== 2. BASE DE DATOS TEST ===
+
+=== 3. PUERTO ACTUAL ===
+Variable_name	Value
+port	3308
+
+=== 4. BIND ADDRESS ===
+Variable_name	Value
+bind_address	0.0.0.0
+
+=== 5. ACCESO REMOTO DE ROOT ===
+User	Host
+root	localhost
+
+=== 6. SQL MODE ===
+@@sql_mode
+ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,STRICT_ALL_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
+
+=== 7. POLÍTICA DE CONTRASEÑAS ===
+Variable_name	Value
+validate_password.changed_characters_percentage	0
+validate_password.check_user_name	ON
+validate_password.dictionary_file	
+validate_password.length	12
+validate_password.mixed_case_count	1
+validate_password.number_count	1
+validate_password.policy	MEDIUM
+validate_password.special_char_count	1
+
+=== 8. TODOS LOS USUARIOS ===
+User	Host	plugin	password_expired	account_locked
+admin	%	caching_sha2_password	N	N
+root	localhost	caching_sha2_password	N	N

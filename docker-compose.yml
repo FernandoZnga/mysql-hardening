@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql-hardening
+    environment:
+      MYSQL_ROOT_PASSWORD: RootPass123!
+      MYSQL_DATABASE: testdb
+    ports:
+      - "3308:3308"
+    volumes:
+      - mysql-data:/var/lib/mysql
+      - ./my.cnf:/etc/mysql/conf.d/custom.cnf
+    networks:
+      - mysql-net
+
+volumes:
+  mysql-data:
+
+networks:
+  mysql-net:
+    driver: bridge
