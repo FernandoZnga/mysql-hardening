@@ -28,6 +28,7 @@ logs/
 *.backup
 *.bak
 *.sql.gz
+my.cnf.hardened
 
 # Credentials (if any)
 credentials/
