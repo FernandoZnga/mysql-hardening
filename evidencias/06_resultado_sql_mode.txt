@@ -1,0 +1,48 @@
+mysql: [Warning] Using a password on the command line interface can be insecure.
+
+=== CONFIGURACIÓN SQL_MODE ACTUAL ===
+
+SQL_MODE GLOBAL
+STRICT_TRANS_TABLES,STRICT_ALL_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION,ONLY_FULL_GROUP_BY
+
+SQL_MODE SESSION
+STRICT_TRANS_TABLES,STRICT_ALL_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION,ONLY_FULL_GROUP_BY
+
+
+=== VERIFICACIÓN DE MODOS CRÍTICOS DE SEGURIDAD ===
+
+STRICT_TRANS_TABLES	STRICT_ALL_TABLES	NO_ZERO_IN_DATE	NO_ZERO_DATE	ERROR_FOR_DIVISION_BY_ZERO	NO_ENGINE_SUBSTITUTION	ONLY_FULL_GROUP_BY
+✓ ACTIVO	✓ ACTIVO	✓ ACTIVO	✓ ACTIVO	✓ ACTIVO	✓ ACTIVO	✓ ACTIVO
+
+
+=== PRUEBAS DE VALIDACIÓN ===
+
+--- Test 1: Truncamiento de datos ---
+
+Resultado Test 1
+Si sql_mode es estricto, el INSERT anterior daría error
+
+--- Test 2: División por cero ---
+
+Resultado Test 2
+Con ERROR_FOR_DIVISION_BY_ZERO activo, división por cero genera error
+
+--- Test 3: Fechas inválidas ---
+
+Resultado Test 3
+Con NO_ZERO_DATE activo, fechas como 0000-00-00 o 2024-02-30 generan error
+
+
+=== RESUMEN DE SEGURIDAD ===
+
+ESTADO DE SEGURIDAD
+SEGURO ✓ - Todos los modos críticos activos
+
+
+=== RECOMENDACIONES ===
+
+Importante	
+NOTA: Este sql_mode debe estar configurado en my.cnf para persistir	después de reiniciar el servidor MySQL.
+
+		
+sql_mode recomendado:	STRICT_TRANS_TABLES,STRICT_ALL_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,	ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION,ONLY_FULL_GROUP_BY
